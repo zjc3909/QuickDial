@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical" 
+    android:background="@drawable/bg_contact_info_item">
+
+    <TextView
+        android:id="@+id/type_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:maxWidth="100dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="17dp"
+        android:textSize="16sp"
+        android:textColor="@color/gray_color"
+        android:gravity="center_vertical"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/content_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:singleLine="true"
+        android:textColor="@color/black_color"
+        android:textSize="16sp" 
+        android:gravity="center_vertical"/>
+
+    <ImageButton
+        android:id="@+id/button_contact_info_call"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/bg_contact_info_call_btn" 
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:padding="5dp"/>
+    <ImageButton
+        android:id="@+id/button_contact_info_message"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/bg_contact_info_message_btn" 
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:padding="5dp"/>
+
+</LinearLayout>

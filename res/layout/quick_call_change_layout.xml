@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quick_call_main_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color" >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/bg_button_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/quick_call_info"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/bg_button_delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_text_light_color" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/new_quick_call_photo_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/icon_contact_list_default_round_photo" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="4dp" >
+
+            <TextView
+                android:id="@+id/new_quick_call_name_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="@color/white_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/new_quick_call_number_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="number"
+                android:textColor="@color/home_text_high_light_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.zhuang.quickcall.utils.widgets.LocusPassWordView
+        android:id="@+id/quick_call_word_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/button_reset"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_orange"
+            android:text="@string/button_update"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

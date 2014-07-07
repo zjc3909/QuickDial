@@ -1,0 +1,150 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuang.quickcall"
+    android:versionCode="5"
+    android:versionName="1.0.5" >
+
+     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+     <!--
+     Allows an application to get information about the currently or recently running tasks: a thumbnail representation of the tasks, what activities are running in it, etc.
+     Used for detection of application state (Foreground / Background / OnTop / etc.)
+    -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:name="QuickCallApp"
+        android:allowBackup="true"
+        android:icon="@drawable/quick_call_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:process="com.zhuang.quickcall">
+        
+        <provider
+            android:name=".provider.QuickCallProvider"
+            android:authorities="com.zhuang.quickcall.provider.quickcallprovider"
+            android:exported="false" />
+        
+        <activity
+            android:name=".SplashScreenActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" 
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".HomeFragmentActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name=".GuideScreenActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".QuickCallMainActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".contacts.ContactInfoActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".contacts.ContactsActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".contacts.ContactsSelectorActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".calllog.CallLogInfoActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".quickcall.CreateQuickCallActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+        <activity
+            android:name=".quickcall.QuickCallChangeActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+         <activity
+            android:name=".settings.SuggestionsActivity"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+        </activity>
+        
+         <!-- 渠道商编号,其中 name 请不要改,将 value 修改为渠道商编号。渠道名称请到 mtj.baidu.com 的渠道管理中修改 -->
+		<meta-data android:name="BaiduMobAd_CHANNEL" android:value="Test" /> 
+		<!-- 您从百度网站获取的 APP KEY -->
+		<meta-data android:name="BaiduMobAd_STAT_ID" android:value="64521d47f2" />
+		<!-- 是否开启错误日志统计,默认为 false -->
+		<meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+		<!-- 日志发送策略,可选值:APP_START、ONCE_A_DAY、SET_TIME_INTERVAL,默认为 APP_START
+		<meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+		<!—上面的日志发送策略 为 SET_TIME_INTERVAL 时,需设定时间间隔。取值为 1-24(小时)的整 数,默认为 1 -->
+		<!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> --> <!-- 日志仅在 wifi 网络下发送,默认为 false -->
+		<meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+		<!-- 是否获取基站位置信息,默认为 true(获取基站位置) -->
+		<!--<meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />-->
+
+    </application>
+
+</manifest>

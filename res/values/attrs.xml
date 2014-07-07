@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HomeBottomButton">
+        <attr name="home_bottom_button_icon" format="integer"></attr>
+        <attr name="home_bottom_button_text" format="string"></attr>
+    </declare-styleable>
+</resources>

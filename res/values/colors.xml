@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_color">#ffffffff</color>
+    <color name="black_color">#ff000000</color>
+    <color name="gray_color">#ff808080</color>
+    <color name="little_gray_color">#ffcacaca</color>
+    <color name="transparent_full">#00000000</color>
+    <color name="transparent_half">#90000000</color>
+    <color name="gray_line_color">#ffdddddd</color>
+    <color name="blue_color">#ff0bafde</color>
+    <color name="orange_color">#fff48221</color>
+    <color name="green_color">#ff71bf95</color>
+    
+    <color name="error_color">#ffe03d3e</color>
+    <color name="guide_bg_color">#ff1f1f24</color>
+    
+    <color name="top_bar_color">#ff1f1f24</color>
+    
+    <color name="bg_dialog_title_color">#ff0bafde</color>
+    <color name="signup_button_nor_color">#ffd85445</color>
+    <color name="signup_button_pressed_color">#ffa54034</color>
+    <color name="signup_button_disable_color">#ffd85445</color>
+    
+    <color name="contact_info_bg">#fff0f0f0</color>
+    
+    <color name="home_text_deep_color">#ff373737</color>
+	<color name="home_text_light_color">#ff808080</color>
+	<color name="home_text_high_light_color">#ffa0a0a0</color>
+	<color name="home_text_high_color">#fff0f0f0</color>
+	
+	<color name="home_line_color">#ffe0e0e0</color>
+	<color name="home_listview_line_color">#ffe0e0e0</color>
+	<color name="home_popup_line_color">#fff0f0f0</color>
+	
+	<color name="home_popup_nor_color">#ff808080</color>
+	<color name="home_popup_pressed_color">#ffffffff</color>
+	<color name="home_bottom_button_color_nor">#ff808080</color>
+	<color name="home_bottom_button_color_pressed">#ff27aae0</color>
+	<color name="home_popup_text_color_nor">#ff27aae0</color>
+	<color name="home_popup_text_color_pressed">#ffffffff</color>
+	<color name="home_empty_text_color">#ffaeaeae</color>
+	
+	<color name="top_title_color">#ff2d8ed9</color>
+	<color name="contact_first_alphabet_bg_color">#fff0f0f0</color>
+	<color name="contact_list_name_color">#ff333333</color>
+	
+	<color name="gray_white_color">#fff0f0f0</color>
+	<color name="quick_call_main_bg_color">#ff1f1f24</color>
+</resources>

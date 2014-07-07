@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color" >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bg_button_back" 
+            android:background="@null"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/title_suggestions"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_right"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/hint_reply"
+        android:textColor="@color/home_text_deep_color"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_suggestions_input"
+        android:focusable="true"
+        android:gravity="top"
+        android:imeOptions="flagNoEnterAction"
+        android:lines="7"
+        android:maxLength="500"
+        android:padding="7dp"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/hint_reply_info"
+        android:textColor="@color/home_text_deep_color"
+        android:textSize="14sp" />
+    
+    <EditText
+        android:id="@+id/reply_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_suggestions_input"
+        android:gravity="center_vertical"
+        android:imeOptions="flagNoEnterAction"
+        android:paddingLeft="7dp"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bg_dialog_button"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/home_text_light_color"
+        android:textSize="14sp" />
+    
+</LinearLayout>

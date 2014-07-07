@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/calllog_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_color"
+        android:cacheColorHint="@color/transparent_full"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/bg_listview_divider"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/bg_listview_selector"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empty_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_color"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/query_proLoading"
+            style="@style/LoginLoadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/query_loading" />
+    </LinearLayout>
+
+</RelativeLayout>

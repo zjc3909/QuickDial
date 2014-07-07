@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">快速呼叫</string>
+    <string name="guide_title1">迅捷拨号</string>
+    <string name="guide_title2">指尖挥洒，快速呼叫。</string>
+    <string name="guide_title3">酷炫多样</string>
+    <string name="guide_content1">发挥想象，怎么拨由你做主</string>
+    <string name="guide_content2">管理方便</string>
+    <string name="guide_content3">不仅快速呼叫，还可管理通话记录和联系人</string>
+    <string name="start">立即体验 >>></string>
+    <string name="select_phone_number">选择电话号码</string>
+    <string name="select_email_address">选择邮箱地址</string>
+    <string name="select_url_address">选择网址</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_delete">删除</string>
+    <string name="dialog_close">关闭</string>
+    <string name="dialog_clear">清除</string>
+    <string name="dialog_join">加入</string>
+    <string name="dialog_send">发送</string>
+    <string name="dialog_upload">确认</string>
+    <string name="phone_tag_extension">分机</string>
+	<string name="phone_tag2_assistant">辅助号码</string>
+	<string name="phone_tag2_callback">回拨</string>
+	<string name="phone_tag2_company_main">公司</string>
+	<string name="phone_tag2_car">车载电话</string>
+	<string name="phone_tag_fax_work">工作传真</string>
+	<string name="phone_tag_fax_home">住宅传真</string>
+	<string name="phone_tag_home">住宅</string>
+	<string name="phone_tag2_isdn">综合业务数字网</string>
+	<string name="phone_tag2_main">主号</string>
+	<string name="phone_tag2_mms">短信</string>
+	<string name="phone_tag_mobile">手机</string>
+	<string name="phone_tag_other">其他</string>
+	<string name="phone_tag2_other_fax">其他传真</string>
+	<string name="phone_tag_pager">呼机</string>
+	<string name="phone_tag2_radio">无线电</string>
+	<string name="phone_tag2_telex">Telex</string>
+	<string name="phone_tag2_tty_tdd">TTY TDD</string>
+	<string name="phone_tag_work">工作</string>
+	<string name="phone_tag2_work_mobile">工作手机</string>
+	<string name="phone_tag2_work_pager">工作呼机</string>
+	<string name="phone_tag_custom">自定义</string>
+	<string name="email_tag_home">个人</string>
+	<string name="email_tag_mobile">移动</string>
+	<string name="email_tag_work">工作</string>
+	<string name="email_tag_other">其他</string>
+	<string name="email_tag_custom">自定义</string>
+	<string name="address_tag_home">住宅</string>
+	<string name="address_tag_work">工作</string>
+	<string name="address_tag_other">其他</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="select_contact_no_contact_title">没有电话号码</string>
+    <string name="select_contact_no_contact_message">没有有效的电话号码可以选择。</string>
+    <string name="title_select_contact">选择联系人</string>
+    <string name="title_contact_info">联系人信息</string>
+    <string name="title_contacts">联系人</string>
+    <string name="contact_info">联系人信息</string>
+    <string name="phone">电话</string>
+    <string name="email">邮箱</string>
+    <string name="no_contact_info">没有联系人信息</string>
+    <string name="search">搜索</string>
+    <string name="no_results_found">未查询到相关信息</string>
+    <string name="no_contacts">没有联系人</string>
+    <string name="no_call_log">没有通话记录</string>
+    <string name="no_quick_call">没有快速呼叫记录</string>
+    <string name="it_is_too_short">长度太短。</string>
+    <string name="update_quick_call_success">更新快速呼叫成功。</string>
+    <string name="create_quick_call_success">创建快速呼叫成功</string>
+    <string name="quick_call_no_change">未做任何更改</string>
+    <string name="menu_editContact">编辑联系人</string>
+    <string name="menu_newContact">创建新联系人</string>
+    <string name="menu_addContact">加到已有联系人</string>
+    <string name="menu_sendEmail">发送邮件</string>
+    <string name="contact_exists">联系人已存在</string>
+    <string name="contact_exists_message">%1$s(%2$s) 已经存储在本地通讯录中。</string>
+    <string name="call_error_title">拨打电话错误</string>
+
+    <!-- long click contact menu item -->
+     <string name="long_click_contact_create_new_quick_call">创建新快速呼叫</string>
+    <string name="long_click_contact_call_contact">呼叫联系人</string>
+    <string name="long_click_contact_send_message">发送短信</string>
+    <string name="long_click_contact_view_contact">查看联系人</string>
+    <string name="long_click_contact_send_email">发送邮件</string>
+    <string name="long_click_contact_edit_contact">编辑联系人</string>
+    <string name="long_click_contact_delete_contact">删除</string>
+    <string name="delete_contact">删除联系人</string>
+    <string name="delete_contact_message">确定要删除所选的联系人？</string>
+    <string name="delete_contact_failed_title">删除失败。</string>
+    <string name="delete_contact_failed">删除失败，请重试。</string>
+    <string name="delete_quick_message">你确定要删除该快速呼叫？</string>
+    <string name="history">历史记录</string>
+    <string name="unsaved">未储存</string>
+    <string name="history_info">通话记录信息</string>
+    <string name="history_detail_view_contact">查看联系人</string>
+    <string name="history_detail_call_contact">呼叫联系人</string>
+    <string name="history_detail_send_message">发送消息</string>
+    <string name="popup_text_create_new_message">创建新消息</string>
+    <string name="popup_text_edit">编辑消息</string>
+    <string name="popup_text_clear_all">清除所有</string>
+    <string name="popup_text_edit_history">编辑通话记录</string>
+    <string name="popup_text_view_contact">查看联系人</string>
+    <string name="popup_text_call_contact">呼叫联系人</string>
+    <string name="popup_text_create_new_contact">创建新联系人</string>
+    <string name="popup_text_add_to_existing_contact">加到已有联系人</string>
+    <string name="popup_text_clear_this_history">清除该通话记录</string>
+    <string name="popup_text_delete_this_message">删除这条信息</string>
+    <string name="delete_history">删除通话记录</string>
+    <string name="delete_history_message">确定要删除这条通话记录？</string>
+    <string name="delete_history_by_contact">确定要删除该联系人相关的所有通话记录？</string>
+    <string name="today">今天</string>
+    <string name="manage">快速呼叫管理</string>
+
+    <string name="quick_call_splash_text">快速呼叫</string>
+    <string name="quick_call_splash_text2">手指挥洒，快速呼叫</string>
+    <string name="quick_call_copyright_text">Copyright &#169; 2014 CoBeOpen, Inc.</string>
+    
+    <string name="quick_call_create_new">创建新的快速呼叫</string>
+    <string name="quick_call_info">快速呼叫信息</string>
+    <string name="quick_call_manage">管理快速呼叫</string>
+    
+    <string name="button_reset">重置</string>
+    <string name="button_save">保存</string>
+    <string name="button_update">更新</string>
+    
+    <string name="dialog_exist_title">该快速呼叫已经存在。</string>
+    <string name="dialog_exist_msg">改快速呼叫已经被联系人(%1$s)占用.</string>
+    
+    <string name="dialog_quick_call_title">开始呼叫</string>
+    <string name="dialog_quick_call_msg">立即呼叫联系人（%1$s）？</string>
+    <string name="call">呼叫</string>
+    
+    <string name="settings_suggestions">反馈</string>
+	<string name="settings_rate_app">评价应用</string>
+	<string name="settings_about_quick_call">关于快速呼叫</string>
+	<string name="title_suggestions">反馈</string>
+	<string name="hint_reply">请输入您的意见或建议。</string>
+	<string name="hint_reply_info">请输入您的联系方式（可选）</string>	
+	<string name="submit">提交</string>
+	<string name="cannot_submit">不能提交</string>
+	<string name="call_error_message_network_error">网络故障请稍后再试。</string>
+	<string name="submit_suggestion_failed">抱歉，提交反馈信息失败。</string>
+	<string name="submit_suggestion_success">提交反馈信息成功。</string>
+	
+	<string name="contact_us">联系我们</string>
+	<string name="contact_us_name">联系人 : 庄将灿</string>
+	<string name="contact_us_email">邮箱 : zjc3909@163.com</string>
+	<string name="contact_us_phone">电话 : +86 18606004265</string>
+	<string name="contact_us_qq">QQ : 122429471</string>
+	<string name="contact_us_address">地址 : 中国福建厦门市软件园二期</string>
+	
+	<string name="home_bottom_quick_call">快速呼叫</string>
+	<string name="home_bottom_call_log">通话记录</string>
+	<string name="home_bottom_contacts">联系人</string>
+	<string name="home_bottom_settings">设置</string>
+	
+	<string name="this_number_has_been_set">该号码已经设定了快速呼叫。</string>
+	
+	<string name="popup_text_delete_this_contact">删除该联系人</string>
+	<string name="popup_text_edit_this_contact">编辑该联系人</string>
+	<string name="popup_text_create_new_quick_call">创建新快速呼叫</string>
+	
+	<string name="save_first">你需要先保存该号码到你本地通讯录。</string>
+</resources>

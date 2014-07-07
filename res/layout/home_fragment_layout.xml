@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quickcall="http://schemas.android.com/apk/res/com.zhuang.quickcall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bar_color" >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/bg_button_back" />
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/quick_call_manage"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/button_menu"
+            android:layout_width="@dimen/top_height"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_button_menu" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" 
+        android:background="@drawable/bg_home_bottom_bar">
+
+	<com.zhuang.quickcall.utils.widgets.HomeBottomButton
+            android:id="@+id/home_bottom_button_quickcall"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            quickcall:home_bottom_button_icon="@drawable/icon_home_button_quick_call"
+            quickcall:home_bottom_button_text="@string/home_bottom_quick_call" />
+	
+        <com.zhuang.quickcall.utils.widgets.HomeBottomButton
+            android:id="@+id/home_bottom_button_calllog"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            quickcall:home_bottom_button_icon="@drawable/icon_home_button_call_log"
+            quickcall:home_bottom_button_text="@string/home_bottom_call_log" />
+
+        <com.zhuang.quickcall.utils.widgets.HomeBottomButton
+            android:id="@+id/home_bottom_button_contacts"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            quickcall:home_bottom_button_icon="@drawable/icon_home_button_contacts"
+            quickcall:home_bottom_button_text="@string/home_bottom_contacts" />
+
+        <com.zhuang.quickcall.utils.widgets.HomeBottomButton
+            android:id="@+id/home_bottom_button_settings"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            quickcall:home_bottom_button_icon="@drawable/icon_home_button_settings"
+            quickcall:home_bottom_button_text="@string/home_bottom_settings" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/top_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="input_height">48dp</dimen>
+    <dimen name="top_height">50dp</dimen>
+    <dimen name="main_tab_margin">10dp</dimen>
+    <dimen name="main_tab_img_margin">7dp</dimen>
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="menu_icon_width">30dp</dimen>
+    
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    
+    <dimen name="incall_handler_width">70dp</dimen>
+    
+    <dimen name="history_detail_button_height">48dp</dimen>
+    
+    <dimen name="singup_edit_item_height">48dp</dimen>
+	<dimen name="share_card_item_height">48dp</dimen>
+	
+</resources>

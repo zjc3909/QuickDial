@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/contacts_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/line_view"
+        android:background="@color/white_color"
+        android:cacheColorHint="@color/transparent_full"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/bg_listview_divider"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@drawable/bg_listview_selector"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_color" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_search"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="7dp"
+                android:src="@drawable/icon_search" />
+
+            <ImageButton
+                android:id="@+id/button_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="7dp"
+                android:src="@drawable/button_search_clear" />
+
+            <EditText
+                android:id="@+id/search_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_search_clear"
+                android:layout_toRightOf="@id/search_icon"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/search"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:singleLine="true" >
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/search_layout"
+        android:background="@drawable/bg_listview_divider" >
+    </View>
+
+    <com.zhuang.quickcall.utils.widgets.ContactAlphaView
+        android:id="@+id/contact_alpha_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_layout" />
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line_view"
+        android:background="@color/white_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empty_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/gray_color"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/query_proLoading"
+            style="@style/LoginLoadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/query_loading" />
+    </LinearLayout>
+
+</RelativeLayout>

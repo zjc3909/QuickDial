@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_create_new_quick_call"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_create_new_quick_call"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/button_call_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_call_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_send_message"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_send_message"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/button_view_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_view_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/button_send_email"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_send_email"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/button_edit_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_edit_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/button_add_to_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/popup_text_add_to_existing_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" 
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/button_create_new_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/popup_text_create_new_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" 
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/button_delete_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_menu_item"
+        android:singleLine="true"
+        android:text="@string/long_click_contact_delete_contact"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+
+</LinearLayout>
